@@ -73,9 +73,9 @@ But if you want to update to the latest build, here’s how to do it:
 ---
 
 ## 📸 Keymaps
-The default layouts are shown here:  
+The default layout is shown here:  
 
-Base Layer:  
+Each layer starting with the default/base:  
 ![Keymap](https://github.com/Timception/drift-v3-dongle/blob/main/keymap-drawer/drift.svg)  
 
 
