@@ -1,107 +1,95 @@
-## Drift Keyboard V3 by Timception  
-
-- This is the wireless [ZMK](https://zmk.dev/) version of the [Original Drift Keyboard](https://github.com/Timception/Drift)  
-
-  - [Default Keymap](#default-keymap) to see where all your keys are, or go straight to the:  
-  
-    - [Keymap Editor by Nick Coutsos](https://nickcoutsos.github.io/keymap-editor/)  
-
-- The PCB is not open source, but you could [contact me](https://www.instagram.com/majin.keyboards) if you would like a pair
-  <br/>  
+# Drift Keyboard V3 Dongle Firmware  
 
 
-## Quickstart Guide   
-  - [1.	How to change your keys](/docs/change-keys/) - Detailed guide on how to change your keys  
+Firmware for the **Drift Keyboard V3 by Timception** with **ZMK Studio** enabled.  
+This version replaces the older editor-based builds and makes it much easier to view and customize your layout directly in [ZMK Studio](https://studio.zmk.dev).
 
-  - [2.	How to install batteries](/docs/batteries/) - Battery installation and alternate options  
+---
 
-  - [3.	Connecting through Bluetooth](/docs/bluetooth/) - Bluetooth connections and troubleshooting  
+## ✨ Features
+- ✅ Precompiled firmware builds ready to flash  
+- ✅ ZMK Studio support (view & change keymaps live) 
+- ✅ Simple reset/reflash procedure  
 
-  - [4.	Charging](/docs/charging/) - How to charge the keyboard and use with USB-C  
+---
 
-  - [5.	Switching to low profile](/docs/low-profile/) - Removal of some parts to use low profile switches  
+## 🔄 Reflashing Instructions
 
-  - [6.	3D Printables](https://github.com/Timception/3d-printables) - This will take you to the 3D printable part repository  
-<br/><br/>  
+If your keyboard already has firmware installed, you usually don’t need to reflash.  
+But if you want to update to the latest build, here’s how to do it:
+
+1. **Download the latest firmware**  
+   - Go to the **[Actions tab](https://github.com/Timception/drift-v3-dongle/actions)** in this repo.  
+   - Open the latest successful build and download the **firmware .zip file**.
+
+2. **Unzip the file**  
+   - Inside you’ll find multiple `.uf2` files:       
+     - `drift_central_dongle.uf2` → Dongle firmware  
+     - `drift_left.uf2` → Left half firmware  
+	 - `drift_left_central.uf2` → No Dongle (Left half acts as central - standard bluetooth)  
+     - `drift_right.uf2` → Right half firmware  
+	 - `settings_reset-nice_nano_v2-zmk.uf2` → Settings Reset firmware (needed to clean devices before new firmware)  
+
+3. **Reset the dongle**  
+   - Plug in your dongle.  
+   - Double-click the **reset button** on the dongle.  
+   - A new drive should appear on your computer.
+
+4. **Flash the reset firmware**  
+   - Drag `settings_reset-nice_nano_v2-zmk.uf2` into the new bootloader drive.  
+   - Wait until the dongle reboots.  
+
+5. **Repeat reset step for each keyboard half**  
+   - Double-click the reset button on the **left half** → drag `settings_reset-nice_nano_v2-zmk.uf2` into the bootloader drive.  
+   - Do the same for the **right half**.  
+
+6. **Flash the NEW dongle firmware**  
+   - Plug in the dongle again.  
+   - Double-click reset → drag `drift_central_dongle.uf2` into the drive.  
+   - Wait for it to finish.  
+
+7. **Flash the left half with new firmware**  
+   - Plug in the **left half**.  
+   - Double-click reset near the power switch.  
+   - Drag `drift_left.uf2` into the bootloader drive.  
+
+8. **Flash the right half with new firmware**  
+   - Repeat the same process with the **right half**, using `drift_right.uf2`.  
+
+9. **Reconnect everything**  
+   - Unplug the halves.  
+   - Plug the dongle back in.  
+   - Press the reset button once on each half so they reconnect to the dongle.  
+
+10. ✅ You’re done!  
+	- Download [ZMK Studio](https://zmk.studio/download), or
+    - Open the [ZMK Studio](https://studio.zmk.dev) app online to see your Drift keyboard.  
+    - Now you can view and customize your keys to your hearts content.  
+	
+11. **Useful Links for further tinkering:**  
+	- More information on all the different [keys and keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes) app online to see your Drift keyboard.  
+	- The original [Drift Keyboard V3](https://github.com/Timception/zmk-config-drift-v3-editor) that uses the more detailed keymapper by [Nick Coutsos](https://nickcoutsos.github.io/keymap-editor/.  
+
+---
+
+## 📸 Keymaps
+The default layouts are shown here:  
+
+Base Layer:  
+![Keymap](https://github.com/Timception/drift-v3-dongle/blob/main/keymap-drawer/drift.svg)  
 
 
-# Default Keymap  
-  <img src="https://github.com/Timception/drift-v3-dongle/blob/main/keymap-drawer/drift.svg">  
+---
 
-  - This keyboard is powered by [ZMK](https://zmk.dev/), an open‑source firmware. ZMK lets you place several “layers” of key functions on the same physical keys. When you press a designated layer key—much like holding "Fn" on a laptop—the keyboard shifts to a different layer, giving you extra controls (for example, volume, brightness, or any custom shortcuts) without adding more keys.  
+## Acknowledgments & Licensing  
 
-  - Split keyboards come with their own set of terms, and one important one to know is the “thumb cluster.” This refers to the group of keys at the bottom in the form of an arc where a traditional keyboard would have the spacebar.  
-    
-  - Unlike standard keyboards, split keyboards make better use of this space by letting you place and customize useful keys there. This reduces the need to reach for commonly used keys.  
+This project makes use of code and ideas from the following repositories:  
+- [ZMK Firmware](https://github.com/zmkfirmware) (MIT License) - Zephyr™ Mechanical Keyboard (ZMK) Firmware  
+- [leafflat/sai44](https://github.com/leafflat/sai44) (MIT License) – Dongle code reference  
+- [caksoylar](https://github.com/caksoylar/keymap-drawer) (MIT License) - Keymap Drawer  
 
-  - For example, on this keyboard, I’ve placed Shift on the left-most thumb cluster key and Backspace on the right-most. The spacebar is in the center of each thumb cluster—so whether you hit the spacebar with your left or right thumb, it’s easy to reach.  
+All third-party code remains under their original licenses (MIT).  
 
-  - You can [change the keys on your keymap](/docs/change-keys/) if you prefer different placing of any key.  
+---
 
-
-> [!Note]  
-> The "&trans" keys seen on the thumb clusters on layers 1 and above act as transparent keys, copying the key set on the layer beneath it.  
-> If you are confused about what some of these keys represent, you may find [more information here](https://zmk.dev/docs/keymaps/list-of-keycodes)  
-> Information on layers can also [be found here](https://zmk.dev/docs/keymaps/behaviors/layers)  
-
-
-## Base/Default Layer (layer 0)  
-- This is the default layer or layer 0 on this keyboard and the keys are as follows:  
-  
-  <img src="images/0_default_layer.png"><br/><br/>  
-
-
-## Lower Layer (layer 1)  
-- This is the lower layer or layer 1. This is where the F-Keys and Arrow-Keys are:  
-  
-  <img src="images/1_lower_layer_n.png">  
-  The "&mo 1" key is held to access this layer as seen in the bottom right of this image.  <br/><br/>  
-
-
-## Raise Layer (layer 2)  
-- This is the lower layer or layer 2. This is where the Bluetooth Functions and Mouse Keys are:  
-  
-  <img src="images/2_raise_layer_n.png">  
-  The "&mo 2" key is held to access this layer as seen in the bottom right of this image.  <br/><br/>  
-
-
-## Adjust Layer (layer 3)  
-- This is the adjust layer or layer 3. This is pretty much a clone of Layer 2 as my usage doesn't go beyond 3 layers:  
-  
-  <img src="images/3_adjust_layer_n.png">  
-   Both "&mo 1" and "&mo 2" keys are held to work together to activate the conditional layer function, taking us to layer 3.  <br/><br/>  
-
-
-This version of the Drift Keyboard supports:  
-
- - 5-Pin MX switches (3-Pin switches will also work)  
- - Kailh Choc V1 switches  
- - Kailh Choc V2 switches  
-<br/>  
-
-How to [change your build](/docs/low-profile/) to use choc switches.  
-<br/>  
-
-<img src="images/switch-support.png" width="500">  
-<br/>  
-
->[!Warning]
->Important Note on LiPo Batteries  
->  
->LiPo (Lithium Polymer) batteries are considered a fire hazard due to their sensitivity
->to overcharging, punctures, or improper handling, which can lead to overheating or combustion.
->Because of strict shipping regulations, LiPo batteries cannot be included with this keyboard
->and must be purchased separately by the builder.  
->  
->Disclaimer: I am not responsible for any damage, injury, or loss resulting from the use,
->charging, or installation of LiPo batteries. Use at your own risk and follow all safety guidelines
->provided by the battery manufacturer.  
->  
->More on how to install batteries [here](/docs/batteries/)  
-<br/><br/>  
-
-You can see more actual builds [HERE](https://www.instagram.com/majin.keyboards)  
-
-This project was made possible thanks to the incredible support of [Friction](https://github.com/friction07)  
-Your generosity truly made all the difference—thank you!  
-
+- The PCB is not open source, but you could [contact me](https://www.instagram.com/majin.keyboards) if you would like a pair, that would really help me out :)  
