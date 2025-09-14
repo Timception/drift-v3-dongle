@@ -68,7 +68,7 @@ But if you want to update to the latest build, here’s how to do it:
 	
 11. **Useful Links for further tinkering:**  
 	- More information on all the different [keys and keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes) app online to see your Drift keyboard.  
-	- The original [Drift Keyboard V3](https://github.com/Timception/zmk-config-drift-v3-editor) that uses the more detailed keymapper by [Nick Coutsos](https://nickcoutsos.github.io/keymap-editor/.  
+	- The original [Drift Keyboard V3](https://github.com/Timception/zmk-config-drift-v3-editor) that uses the more detailed keymapper by [Nick Coutsos](https://nickcoutsos.github.io/keymap-editor/).  
 
 ---
 
