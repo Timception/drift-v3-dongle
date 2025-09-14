@@ -1,4 +1,4 @@
-# Drift Keyboard V3 Dongle Firmware  
+# Drift Keyboard V3 by Timception (Dongle Version)  
 
 
 Firmware for the **Drift Keyboard V3 by Timception** with **ZMK Studio** enabled.  
