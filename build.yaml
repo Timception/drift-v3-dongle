@@ -25,15 +25,15 @@
 #    shield: settings_reset
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2//zmk
     shield: drift_central_dongle dongle_display
     snippet: studio-rpc-usb-uart
     artifact-name: drift_central_dongle
-  - board: nice_nano_v2
+  - board: nice_nano@2//zmk
     shield: drift_left    
     artifact-name: drift_left  
-  - board: nice_nano_v2
+  - board: nice_nano@2//zmk
     shield: drift_right
     artifact-name: drift_right
-  - board: nice_nano_v2
+  - board: nice_nano@2//zmk
     shield: settings_reset
