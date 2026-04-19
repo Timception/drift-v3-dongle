@@ -32,7 +32,6 @@ But if you want to update to the latest build, here’s how to do it:
    - Inside you’ll find multiple `.uf2` files:       
      - `drift_central_dongle.uf2` → Dongle firmware  
      - `drift_left.uf2` → Left half firmware  
-	 - `drift_left_central.uf2` → No Dongle (Left half acts as central - standard bluetooth)  
      - `drift_right.uf2` → Right half firmware  
 	 - `settings_reset-nice_nano_v2-zmk.uf2` → Settings Reset firmware (needed to clean devices before new firmware)  
 
