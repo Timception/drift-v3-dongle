@@ -23,7 +23,7 @@ How to [install batteries](/battery/) and Charging.
 
 ## 🔄 Reflashing Instructions
 
-If your keyboard already has firmware installed, you usually don’t need to reflash.  
+Your keyboard already has firmware installed, you usually don’t need to reflash.  
 But if you want to update to the latest build, here’s how to do it:
 
 1. **Download the latest firmware**  
@@ -74,7 +74,7 @@ But if you want to update to the latest build, here’s how to do it:
     - Now you can view and customize your keys to your hearts content.  
 	
 11. **Useful Links for further tinkering:**  
-	- More information on all the different [keys and keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes) app online to see your Drift keyboard.  
+	- More information on all the different [keys and keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes)  
 	- The original [Drift Keyboard V3](https://github.com/Timception/zmk-config-drift-v3-editor) that uses the more detailed keymapper by [Nick Coutsos](https://nickcoutsos.github.io/keymap-editor/).  
 
 ---
