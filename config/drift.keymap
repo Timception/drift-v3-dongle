@@ -88,9 +88,9 @@
 
             bindings = <
 &bootloader  &kp ESC    &kp GRAVE  &kp F1  &kp F2  &kp F3     &kp F4     &kp F5                          &kp F6  &kp F7     &kp F8     &kp F9   &kp F10   &kp F11   &kp F12        &kp BSPC
-&kp LC(C)    &trans     &kp TAB    &kp Q   &kp W   &kp E      &kp R      &kp T                           &kp Y   &kp U      &kp I      &kp O    &kp P     &kp LBKT  &kp BACKSLASH  &kp BSLH
-             &kp LGUI   &kp CAPS   &kp A   &kp S   &kp D      &kp F      &kp G                           &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT   &kp UP
-&kp LC(V)    &kp LCTRL  &kp LALT   &kp Z   &kp X   &kp C      &kp V      &kp B   &kp C_MUTE  &kp C_MUTE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT  &kp DOWN       &kp RIGHT
+&trans       &trans     &kp TAB    &kp Q   &kp W   &kp E      &kp R      &kp T                           &kp Y   &kp U      &kp I      &kp O    &kp P     &kp LBKT  &kp BACKSLASH  &kp BSLH
+             &trans     &kp CAPS   &kp A   &kp S   &kp D      &kp F      &kp G                           &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT   &kp UP
+&trans       &trans     &trans     &kp Z   &kp X   &kp C      &kp V      &kp B   &kp C_MUTE  &kp C_MUTE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT  &kp DOWN       &kp RIGHT
                                                    &kp LSHFT  &kp SPACE  &trans                          &trans  &kp SPACE  &kp DEL
             >;
 
@@ -111,9 +111,9 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &kp F6  &kp F7     &kp F8     &kp F9   &kp F10   &kp F11         &msc SCRL_UP    &bootloader
-&kp LC(C)   &trans      &kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                 &kp Y   &kp U      &kp I      &kp O    &kp P     &mkp MCLK       &msc SCRL_DOWN  &mkp RCLK
-            &kp LGUI    &kp CAPS        &kp A         &kp S         &kp D         &kp F         &kp G                                 &kp H   &kp J      &kp K      &kp L    &kp SEMI  &mkp LCLK       &mmv MOVE_UP
-&kp LC(V)   &kp LCTRL   &kp LALT        &kp Z         &kp X         &kp C         &kp V         &kp B         &kp C_MUTE  &kp C_MUTE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&trans      &trans      &kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                 &kp Y   &kp U      &kp I      &kp O    &kp P     &mkp MCLK       &msc SCRL_DOWN  &mkp RCLK
+            &trans      &kp CAPS        &kp A         &kp S         &kp D         &kp F         &kp G                                 &kp H   &kp J      &kp K      &kp L    &kp SEMI  &mkp LCLK       &mmv MOVE_UP
+&trans      &trans      &trans          &kp Z         &kp X         &kp C         &kp V         &kp B         &kp C_MUTE  &kp C_MUTE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
                                                                     &kp LSHFT     &kp SPACE     &trans                                &trans  &kp SPACE  &kp DEL
             >;
 
@@ -133,9 +133,9 @@
             display-name = "adjust";
             bindings = <
 &bt BT_CLR  &bt BT_CLR  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &kp F6  &kp F7     &kp F8     &kp F9   &kp F10   &kp F11         &msc SCRL_UP    &bt BT_CLR
-&kp LC(C)   &trans      &kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                 &kp Y   &kp U      &kp I      &kp O    &kp P     &kp LBKT        &msc SCRL_DOWN  &mkp RCLK
-            &kp LGUI    &kp CAPS        &kp A         &kp S         &kp D         &kp F         &kp G                                 &kp H   &kp J      &kp K      &kp L    &kp SEMI  &mkp LCLK       &mmv MOVE_UP
-&kp LC(V)   &kp LCTRL   &kp LALT        &kp Z         &kp X         &kp C         &kp V         &kp B         &kp C_MUTE  &kp C_MUTE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&trans      &trans      &kp TAB         &kp Q         &kp W         &kp E         &kp R         &kp T                                 &kp Y   &kp U      &kp I      &kp O    &kp P     &kp LBKT        &msc SCRL_DOWN  &mkp RCLK
+            &trans      &kp CAPS        &kp A         &kp S         &kp D         &kp F         &kp G                                 &kp H   &kp J      &kp K      &kp L    &kp SEMI  &mkp LCLK       &mmv MOVE_UP
+&trans      &trans      &trans          &kp Z         &kp X         &kp C         &kp V         &kp B         &kp C_MUTE  &kp C_MUTE  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
                                                                     &kp LSHFT     &kp SPACE     &trans                                &trans  &kp SPACE  &kp BSPC
             >;
 
