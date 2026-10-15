@@ -75,7 +75,12 @@ But if you want to update to the latest build, here’s how to do it:
 	
 11. **Useful Links for further tinkering:**  
 	- More information on all the different [keys and keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes)  
-	- The original [Drift Keyboard V3](https://github.com/Timception/zmk-config-drift-v3-editor) that uses the more detailed keymapper by [Nick Coutsos](https://nickcoutsos.github.io/keymap-editor/).  
+	- A more detailed keymapper by [Nick Coutsos](https://nickcoutsos.github.io/keymap-editor/).  
+
+---
+
+## Quickstart Guide   
+  - [1.	How to change your keys with Nick Coutsos' Keymapper](/docs/change-keys/) - Detailed guide on how to change your keys the most customizable way  
 
 ---
 
