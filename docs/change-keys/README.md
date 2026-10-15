@@ -4,7 +4,7 @@
 
   - Login to GitHub, [fork keyboard repository](#1-fork-this-repository)  
   - [Enable workflows/actions](#4-enable-workflows) (to pump out your own firmware)  
-  - [Enable keymap editor](#12-click-the-keymap-editor-link) (to edit your keymap)  
+  - [Enable keymap editor](#12-right-click,-open-this-link-in-a-new-tab) (to edit your keymap)  
   - [Save keymap changes](#22-click-save-at-the-top-to-save-your-new-keymap), download new firmware  
   - [Flash keyboard firmware](#26-plug-left-half-of-the-drift-keyboard-into-your-computer-then-double-click-the-reset-button) one side at a time, enjoy  
 <br/><br/>  
